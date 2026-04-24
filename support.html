@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — SubGuard</title>
+<link rel="icon" type="image/png" href="./assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Manrope', sans-serif; color: #0A0A0A; background: #FFFFFF; line-height: 1.65; font-size: 16px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+  .back { display: inline-block; margin-bottom: 32px; font-weight: 600; color: #0052FF; text-decoration: none; font-size: 14px; }
+  h1 { font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  h2 { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; margin-top: 40px; margin-bottom: 12px; }
+  .lead { color: #4B5563; font-size: 18px; margin-bottom: 32px; max-width: 580px; }
+  p, li { color: #374151; margin-bottom: 12px; }
+  ul { padding-left: 22px; margin-bottom: 12px; }
+  a { color: #0052FF; }
+  .cta-card { background: #F4F5F7; border-radius: 20px; padding: 24px 28px; margin-top: 40px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .cta-card p { margin: 0; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; background: #0052FF; color: white; border-radius: 999px; font-weight: 700; font-size: 14px; text-decoration: none; }
+  details { border-top: 1px solid #E5E7EB; padding: 20px 0; }
+  details:last-of-type { border-bottom: 1px solid #E5E7EB; }
+  summary { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 17px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; color: #9CA3AF; font-size: 22px; transition: transform .2s; }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="index.html" class="back">← Back to SubGuard</a>
+  <h1>We're here to help.</h1>
+  <p class="lead">SubGuard is built by a tiny team that personally reads every support email. Most questions are answered below — if yours isn't, just email us.</p>
+  <h2>Quick help</h2>
+  <details open><summary>I forgot my PIN.</summary><p>Because SubGuard stores nothing on servers, we cannot reset a PIN for you. From the Lock screen, tap <em>Sign out instead</em> and log in again with your email + password. If you've also forgotten the password, the only option is <em>Reset all data</em> from the app (or uninstall + reinstall). Your subscription data is tied to your on-device account.</p></details>
+  <details><summary>Reminders are not arriving on Android.</summary><p>Android's battery-optimisation sometimes pauses background alarms. Go to: <em>Android Settings → Apps → SubGuard → Battery → Unrestricted</em>. Also make sure SubGuard has notification permission enabled at the system level.</p></details>
+  <details><summary>Can I move my subscriptions to a new phone?</summary><p>At launch SubGuard does not support device-to-device transfer — a deliberate trade-off for our offline-first privacy model. Encrypted backup/restore is planned for v1.2.</p></details>
+  <details><summary>Why do I see an ad even though SubGuard is free?</summary><p>A single non-intrusive banner ad at the bottom of the Dashboard pays the hosting + Play Store fee for the app. We don't show interstitials, pop-ups, or video ads. A one-time Premium upgrade to remove the banner is on the roadmap.</p></details>
+  <details><summary>Does SubGuard work without internet?</summary><p>Yes — everything except the banner ad works fully offline. Set up subscriptions, add reminders, view insights: no network needed.</p></details>
+  <details><summary>Can I add more currencies?</summary><p>Currently we support USD, EUR, GBP, CAD, AUD and INR. If you need another, email us — we add them based on user demand.</p></details>
+  <details><summary>I want to delete all my data.</summary><p>Open the app, go to <em>Settings → Reset all data</em> and confirm. That wipes your account and every subscription from the device. Alternatively, just uninstall the app.</p></details>
+  <div class="cta-card">
+    <div style="flex:1; min-width: 220px;"><p><strong>Still stuck?</strong> Email us and we'll reply within 48 hours (usually much faster).</p></div>
+    <a href="mailto:subguard.support@gmail.com" class="btn">✉️ Email support</a>
+  </div>
+  <h2 style="margin-top: 64px;">Version info</h2>
+  <ul>
+    <li><strong>Current version:</strong> 1.0.0</li>
+    <li><strong>Platforms:</strong> iOS 14+, Android 8+</li>
+    <li><strong>Release channel:</strong> Public (Play Store + App Store)</li>
+  </ul>
+</div>
+</body>
+</html>
